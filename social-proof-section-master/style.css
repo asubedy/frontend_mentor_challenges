@@ -61,12 +61,12 @@ body{
 
 .rating{
     width:20rem;
-    min-height: 5rem;
+    min-height: 3.5rem;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    background:rgb(255, 255, 255);
+    background:hsl(300, 24%, 96%);
     border-radius: 20px;
     margin-top: 1rem;
     color:hsl(300, 43%, 22%);
@@ -80,6 +80,7 @@ body{
     height: auto;
     width:auto;
     margin-top: 1rem;
+    
     display: flex;
     flex-direction: column;
     margin:0.1rem;
@@ -87,7 +88,8 @@ body{
 .reviews{
     background:hsl(300, 43%, 22%);
     margin:.8rem;
-    border-radius: 20px;
+    border-radius: 10px;
+    
 }
 .namePicture{
     display:flex;
@@ -125,9 +127,22 @@ h3{
         text-align:left;
         font-size: 40px;
     }
+    .semicircle{
+    background-color:black;
+    width:50rem;
+    height:50rem;
+    position:absolute;
+    top:-30rem;
+    left:0;
+    z-index:-1;
+    shape-outside: circle(50% at 0%);
+    clip-path: circle(50% at 0%);
+    background: hsl(300, 24%, 97%);
+    
+    }
     body{
         display:block;
-        margin:2%;
+        margin:4%;
     }
     /* .headingContainer{
         position:relative;
@@ -138,10 +153,13 @@ h3{
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 3.5rem;
-        margin: 0rem 5rem 3.5rem 1rem ;
+        margin: 1rem 8rem 1.5rem 2rem ;
+        z-index: 100;
     }    
     .reviewContainer{
         flex-direction: row;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
         
     }
     .headingSubText{
@@ -164,22 +182,26 @@ h3{
      */
     }
     .rating{
-        background:rgb(240, 239, 239);
+       
+        background:rgb(240, 239, 239); 
         border-radius: 10px;
         flex-direction: row;
-        width:25rem;
-        align-items:center;
+        justify-content:space-around;
+        width:26rem;
+        align-content:center;
     }
     .stars{
         padding-right: 1rem;
+        position:relative;
+        top:0.2rem;
 
     }
     .rating.second{
         position: relative;
-        left :2rem;
+        left :3rem;
     }
     .rating.third{
         position: relative;
-        left :4rem;
+        left :6rem;
     }
 }
